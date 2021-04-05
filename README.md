@@ -19,7 +19,7 @@ be changed to different locations. `TOLLERANCE` should be adjusted as well for n
 
 ## Approch
 
-Very naive approch reasonable space complexity and brute force matching.
+Very naive approch reasonable space complexity and brute force matching. Algorithm allow to find objects which is partly visible in radar (no less than 70%).
 
 ## Run tests
 

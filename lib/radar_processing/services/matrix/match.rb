@@ -9,7 +9,7 @@ module RadarProcessing
     def call
       return 0 if @matrix.count != @other.count
 
-      return 0 if @matrix.count * @required_elements >= nil_count
+      return 0 if @matrix.count * @required_elements >= visable_count
 
       match = @matrix.combine(@other) { |a, b| a == b || a.nil? ? 1 : 0 }.sum
 
@@ -18,7 +18,7 @@ module RadarProcessing
 
     private
 
-    def nil_count
+    def visable_count
       @matrix.map { |a| a.nil? ? 0 : 1 }.sum
     end
   end
