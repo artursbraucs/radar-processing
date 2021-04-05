@@ -1,0 +1,41 @@
+AllCops:
+  EnabledByDefault: true
+  DisplayCopNames: true
+  TargetRubyVersion: 3.0
+  # Exclude:
+
+Metrics/BlockLength:
+  IgnoredMethods: ['describe', 'context']
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringHashKeys:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Lint/ConstantResolution:
+  Enabled: false
+
+Layout/MultilineAssignmentLayout:
+  EnforcedStyle: same_line
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Style/MethodCallWithArgsParentheses:
+  Enabled: false
+
+Style/Copyright:
+  Enabled: false
